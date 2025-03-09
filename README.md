@@ -4,7 +4,7 @@
 # Project setup
 ** NOTE: Project setup is being updated weekly in the summer semester 2024/25. **
 
-## Build your own image and run it
+## Build your own image and run it (Docker)
 
 1. Build image
 
@@ -25,3 +25,18 @@ docker run --platform linux/amd64 -it \
 ```
 
 3. Navigate to http://localhost:8888 (password is 'Geslo.01') and enjoy!
+
+## Setup your local environment and run notebooks
+
+Configuration tested on Mac M1 Max and Python 3.11.
+
+Create environment, install libraries and run notebook server:
+
+```
+python -m venv ./venv
+source ./venv/bin/activate
+pip install -r- ./docker_environment/requirements.txt
+jupyter notebook
+```
+
+Enjoy!
